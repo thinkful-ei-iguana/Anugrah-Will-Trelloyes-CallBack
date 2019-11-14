@@ -85,6 +85,8 @@ state = {
               id={list.id}
               header={list.header}
               cards={list.cardIds.map(id => store.allCards[id])}
+              onClickDelete={this.handleDeleteCard}
+              onClickAdd={this.handleAddCard}
             />
           ))}
         </div>
